@@ -15,8 +15,8 @@ export default function Form() {
     value={input}
     onChange={(e) => setInput(e.target.value)}
   />
-  <button className="h-8 md:h-10 w-[17.6rem] md:w-[22rem] rounded-lg border-transparent bg-primary bg-opacity-10 focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50 focus:bg-opacity-20 active:bg-opacity-30 hover:bg-opacity-30 text-sm md:text-base">
-    <span className="text-primary opacity-80">Join Space</span>
+  <button className="h-8 md:h-10 w-[17.6rem] md:w-[22rem] rounded-lg border-transparent bg-primary focus:bg-opacity-70 text-sm md:text-base">
+    <span className="text-black">Join Space</span>
   </button>
 
   <p className="text-lg md:text-xl opacity-60">OR</p>
