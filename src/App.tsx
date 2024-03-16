@@ -1,13 +1,11 @@
-import Bundle from "./components/Navbar";
+import Bundle from "./components/Bundle";
 import waves from "./assets/waves.png";
-import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="h-screen w-screen bg-gradient-to-br from-gradient1 to-gradient2">
-       <img src={waves} alt="Background" className="absolute object-cover w-full h-full opacity-[1%]" />
-      <Bundle/>
-      {/* <Home/> */}
+    <div className="h-screen w-screen bg-gradient-to-br from-gradient1 from-70% to-gradient2 relative">
+      <img src={waves} alt="Background" className="absolute inset-0 object-cover w-full h-full opacity-[1%]" />
+      <Bundle />
     </div>
   );
 }
