@@ -6,7 +6,7 @@ import Audio from "./Audio";
 
 export default function Space() {
   return (
-    <div className="grid grid-cols-6 grid-rows-4 h-[100%] z-20 ">
+    <div className="grid grid-cols-6 grid-rows-4 h-full z-20 ">
       <div className="col-span-4 row-span-3 flex items-center justify-center p-2">
         <Editor />
       </div>
