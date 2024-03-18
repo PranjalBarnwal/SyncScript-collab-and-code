@@ -1,5 +1,4 @@
 
-import { useEffect } from "react";
 
 import React from 'react';
 import CodeMirror from '@uiw/react-codemirror';
@@ -38,7 +37,7 @@ function binarySearch(arr: number[], target: number): number {
 }
 `;
   const [value, setValue] = React.useState(code);
-  const onChange = React.useCallback((val, viewUpdate) => {
+  const onChange = React.useCallback((val) => {
     console.log('val:', val);
     setValue(val);
   }, []);
