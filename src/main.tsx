@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./routes/Home.tsx";
 import ErrorPage from "./routes/ErrorPage.tsx";
 import Space from "./routes/Space.tsx";
+import NamePopup from "./components/NamePopup.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/space",
         element: <Space />,
+      },
+      {
+        path: "/name",
+        element: <NamePopup />,
       },
     ],
   },
