@@ -1,8 +1,8 @@
 
 export default function NamePopup() {
   return (
-    <div>
-      
+    <div className="text-white">
+      This is a name popup
     </div>
   )
 }
