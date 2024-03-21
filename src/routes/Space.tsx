@@ -1,8 +1,8 @@
-import Editor from "./Editor";
-import OutputBox from "./OutputBox";
-import Panel from "./Panel";
-import Toolbar from "./Toolbar";
-import Audio from "./Audio";
+import Editor from "../components/Editor";
+import OutputBox from "../components/OutputBox";
+import Panel from "../components/Panel";
+import Toolbar from "../components/Toolbar";
+import Audio from "../components/Audio";
 
 export default function Space() {
   return (

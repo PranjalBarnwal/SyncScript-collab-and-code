@@ -1,19 +1,9 @@
 
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
-
-// function App() {
-//   const [value, setValue] = React.useState("console.log('hello world!');");
-//   const onChange = React.useCallback((val, viewUpdate) => {
-//     console.log('val:', val);
-//     setValue(val);
-//   }, []);
-//   return <CodeMirror value={value} height="200px" extensions={[javascript({ jsx: true })]} onChange={onChange} />;
-// }
-// export default App;
-
+import { initSocket } from '../socket';
 
 export default function Editor() {
   const code: string = `
@@ -36,6 +26,15 @@ function binarySearch(arr: number[], target: number): number {
   return -1; // Element not found
 }
 `;
+  const socketRef=useRef(null);
+  useEffect(()=>{
+      const init =async()=>{
+        socketRef.current=await initSocket();
+        
+      }
+
+      init();
+  },[])
   const [value, setValue] = React.useState(code);
   const onChange = React.useCallback((val) => {
     console.log('val:', val);

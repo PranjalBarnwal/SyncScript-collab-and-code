@@ -1,5 +1,5 @@
-import Codepic from "./Codepic";
-import Form from "./Form";
+import Codepic from "../components/Codepic";
+import Form from "../components/Form";
 
 export default function Home() {
   return(
