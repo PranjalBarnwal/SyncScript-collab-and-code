@@ -3,9 +3,9 @@ import Dropdown from "./Dropdown";
 
 export default function Toolbar({ setEditorConfig }) {
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-  }
+  // function classNames(...classes) {
+  //   return classes.filter(Boolean).join(' ');
+  // }
 
   return (
     <fieldset className="flex flex-row font-poppins  items-center text-primary h-full w-full border-primary border-[1px] rounded-lg  z-20 px-5 space-x-5">
